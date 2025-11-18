@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EC NALAMAHARAJAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-wrap">
+                <div class="logo-badge">E</div>
+                <div class="brand">EC NALAMAHARAJAS</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <h1 class="hero-title">Taste the difference in every bite</h1>
+
+            <!-- search inputs removed as requested -->
+
+            <div class="cards">
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Onion Pakoda</h3>
+                        <p class="muted">SNACK</p>
+                        <span class="badge">₹ 20</span>
+                    </div>
+                    <div class="card-illustration">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/azoghrwhzqdxvhjrh7ci" alt="Onion Pakoda" />
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Top Masth veg roll</h3>
+                        <p class="muted">SNACK</p>
+                        <span class="badge">₹ 30</span>
+                    </div>
+                    <div class="card-illustration">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/FOOD_CATALOG/IMAGES/CMS/2025/3/28/50276280-799a-462d-a61a-96d9903e816b_c98f4be9-c57c-48a9-9799-52d54a3e38fc.jpg" alt="Veg Roll" />
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Tangi  Charmburi</h3>
+                        <p class="muted">SNACK</p>
+                        <span class="badge">₹ 20</span>
+                    </div>
+                    <div class="card-illustration">
+                        <img src="https://florafoods.in/wp-content/uploads/2019/07/dharwad-churmuri-with-garlic-j-2.png" alt="Veg Roll" />
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Panjabi Dal Tadka</h3>
+                        <p class="muted">SNACK</p>
+                        <span class="badge">₹ 40</span>
+                    </div>
+                    <div class="card-illustration">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/uxmpzixs295rf9hfrzfb" alt="Veg Roll" />
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Chilled Watermelon Smoodh</h3>
+                        <p class="muted">Liquid Luxe</p>
+                        <span class="badge">₹ 10</span>
+                    </div>
+                    <div class="card-illustration">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/sdsoy0rnhmmonoficpbe" alt="Veg Roll" />
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Mix Fruit mix blast mix shake</h3>
+                        <p class="muted">Liquid Luxe</p>
+                        <span class="badge">₹ 10</span>
+                    </div>
+                    <div class="card-illustration">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/FOOD_CATALOG/IMAGES/CMS/2025/4/10/a54f5f78-35ac-4e35-8239-84f855d63292_f4779bc6-6eed-46d4-acde-68ce3f45a734.jpeg" alt="Veg Roll" />
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <a href="https://www.instagram.com/yochxn.__" target="_blank" rel="noopener noreferrer">Developed by Yochan</a>
+        </div>
+    </footer>
+        <!-- DevTools blocker: stronger detection and immediate block action -->
+        <div id="devtools-overlay" style="display:none" aria-hidden="true"></div>
+        <script>
+        (function(){
+            const overlayId = 'devtools-overlay';
+            const overlayHtml = '<div class="blocked-overlay"><p>Developer tools are disabled on this page.</p><small>If you need access, please contact the site owner.</small></div>';
+
+            function showHardBlock(){
+                try{
+                    // Replace entire document with overlay to make inspection harder
+                    document.documentElement.innerHTML = overlayHtml;
+                }catch(e){
+                    // fallback: append overlay
+                    const el = document.getElementById(overlayId) || document.createElement('div');
+                    el.id = overlayId; el.className='blocked-overlay'; el.innerHTML = '<p>Developer tools are disabled on this page.</p><small>If you need access, please contact the site owner.</small>';
+                    document.documentElement.appendChild(el);
+                }
+            }
+
+            // Prevent simple actions
+            document.addEventListener('contextmenu', e => { e.preventDefault(); showHardBlock(); });
+            document.addEventListener('keydown', function(e){
+                const key = (e.key || '').toUpperCase();
+                if(key === 'F12') { e.preventDefault(); showHardBlock(); }
+                if(e.ctrlKey && e.shiftKey && (key === 'I' || key === 'J' || key === 'C' || key === 'K')) { e.preventDefault(); showHardBlock(); }
+                if(e.ctrlKey && key === 'U') { e.preventDefault(); showHardBlock(); }
+                if(e.metaKey && e.altKey && key === 'I') { e.preventDefault(); showHardBlock(); }
+            }, true);
+
+            // Heuristic detections
+            function sizeDetect(){
+                try{
+                    const threshold = 160;
+                    return (window.outerWidth - window.innerWidth > threshold) || (window.outerHeight - window.innerHeight > threshold);
+                }catch(e){return false}
+            }
+
+            function consoleDetect(){
+                let detected = false;
+                try{
+                    const obj = { toString: function(){ detected = true; return ''; } };
+                    console.log('%c', obj);
+                }catch(e){}
+                return detected;
+            }
+
+            // Periodic aggressive check
+            setInterval(function(){
+                try{
+                    if(sizeDetect() || consoleDetect()){
+                        showHardBlock();
+                    }
+                }catch(e){}
+            }, 400);
+
+            // Final note: this makes casual inspection harder but cannot stop determined users.
+        })();
+        </script>
+</body>
+</html>
